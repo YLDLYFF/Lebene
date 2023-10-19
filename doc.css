@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,400&display=swap');
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  padding: 1.25rem 1.25rem;
+  margin: 0;
+  font-family: "Poppins", "Asap", Arial, Helvetica, sans-serif;
+  background-color: #d8d8d86c;
+}
+
+.doc-container {
+  /* padding: 1.25rem 1.25rem; */
+  margin: 0 auto;
+
+
+}
+
+.doc-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+p,
+h1,
+h3 {
+  text-align: left;
+  color:#242424;
+
+}
+span{
+  color:#333;
+  font-weight:600;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+ul {
+  text-align: left;
+  list-style: square;
+}
+
+a {
+  text-decoration: none;
+  color: #ececec;
+}
+
+button {
+  margin-top: 8px;
+  cursor: pointer;
+  padding: 10px;
+  outline: none;
+  background: rgba(26, 102, 102, 0.801);
+  border: none;
+  border-radius: 3.8px;
+  font-family: inherit;
+}
+
+@media (min-width:768px) {
+  .doc-container {
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+
+
+  }
+
+  button {
+    position: fixed;
+  }
+}
