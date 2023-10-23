@@ -255,6 +255,7 @@ svg {
   color: #fff;
   padding: 1.25rem 1.4rem;
   border-radius: 10px;
+  max-width: 100%;
 }
 
 #do-you p {
@@ -276,7 +277,7 @@ svg {
 
 #order {
   font-weight: 600;
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 #query {
@@ -363,20 +364,21 @@ input:focus {
   border-radius: 8px;
 }
 
-#message {
+#area {
+  resize: none;
+  height: 100px;
+  max-width: 250px;
   margin-top: 8px;
   border: 1px groove #1a1a1aaf;
   border-radius: 5px;
   padding: 12px;
   color: #F1F5F9;
-  background-color: #161616;
+  background-color: #1a1a1a;
   font-family: inherit;
   border-color: rgba(35, 255, 255, 0.801);
 }
-textarea{
-  width: 90%;
-}
-textarea:focus {
+
+#message:focus {
   border-color: #23ffffcc;
 }
 
@@ -440,8 +442,9 @@ footer {
   white-space: nowrap;
   text-align: left;
 }
-.footer-links a:hover{
-  color:#1a1a1a;
+
+.footer-links a:hover {
+  color: #1a1a1a;
 }
 
 #ul {
@@ -528,7 +531,11 @@ span {
     width: 300.55px;
     height: 197.17px;
   }
-
+#area {
+  resize: none;
+  height: 100px;
+  max-width: 400px;
+}
   .welcome-talk {
     height: 30%;
     line-height: 30px;
@@ -557,9 +564,7 @@ span {
     align-items: center;
     gap: 2.8rem;
   }
-  textarea{
-    width: 98%;
-  }
+
 
   .links,
   a {
@@ -750,7 +755,8 @@ span {
     border-radius: 2px;
     width: 50%;
   }
-  input{
+
+  input {
     background-color: #292929;
     border-color: #F1F5F9;
   }
