@@ -557,6 +557,9 @@ span {
     align-items: center;
     gap: 2.8rem;
   }
+  textarea{
+    width: 98%;
+  }
 
   .links,
   a {
