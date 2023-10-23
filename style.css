@@ -373,7 +373,9 @@ input:focus {
   font-family: inherit;
   border-color: rgba(35, 255, 255, 0.801);
 }
-
+textarea{
+  width: 100%;
+}
 textarea:focus {
   border-color: #23ffffcc;
 }
@@ -437,6 +439,9 @@ footer {
   font-size: 14px;
   white-space: nowrap;
   text-align: left;
+}
+.footer-links a:hover{
+  color:#1a1a1a;
 }
 
 #ul {
@@ -536,7 +541,7 @@ span {
 
   .hero-container {
     background-image: linear-gradient(to top, #33333357, transparent),
-      url('imaGes/IMG-20231011-WA0032.jpg');
+      url('imaGes/pexels-dorota-semla-8969237.jpg');
     object-fit: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -562,7 +567,7 @@ span {
 
   #wide {
     font-weight: 600;
-    color: #1c4f63;
+    color: #c7efff;
     font-size: 30px;
   }
 
@@ -635,7 +640,7 @@ span {
 
   .hero-container {
     background-image: linear-gradient(to top, #14141491, transparent),
-      url('imaGes/IMG-20231011-WA0040.jpg');
+      url('imaGes/pexels-spencer-davis-4393021.jpg');
     object-fit: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -661,7 +666,7 @@ span {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    background-image: linear-gradient(to right, #cacaca, #f8f29b);
+    background-image: linear-gradient(to right, #3a3a3acb, #070606);
     /* text-align: center; */
   }
 
@@ -682,7 +687,7 @@ span {
 
   #menu {
     padding: 1.2rem 1.4rem;
-    background-image: linear-gradient(to bottom, #1d1d1dd0, #1d1d1dc4), url('imaGes/IMG-20231011-WA0033.jpg');
+    background-image: linear-gradient(to bottom, #1d1d1dd0, #1d1d1dc4), url('imaGes/pexels-ella-olsson-1640772.jpg');
     object-fit: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -741,6 +746,10 @@ span {
     padding: 1.25rem 1.25rem;
     border-radius: 2px;
     width: 50%;
+  }
+  input{
+    background-color: #292929;
+    border-color: #F1F5F9;
   }
 
   .socials {
