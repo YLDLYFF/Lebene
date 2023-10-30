@@ -17,31 +17,69 @@ const firebaseConfig = {
 };
 
 // Initialising the database
-firebase.initializeApp( firebaseConfig );
+firebase.initializeApp(firebaseConfig);
 
 
 // Referencing the database
-const contactFormDB = firebase.database().ref( 'Lebene' )
+const contactFormDB = firebase.database().ref('Lebene')
 
-
-document.getElementById( "send" ).addEventListener( 'submit', function submitForm ( e ) {
+//this function is set to get all the values from the input
+const getElementVal = (id) => {
+  return document.getElementById(id).value;
+}
+//adding eventListeners
+document.getElementById("send").addEventListener('submit', function submitForm (e) {
   e.preventDefault();
 
-  let name = getElementVal( 'name' );
-  let phone = getElementVal( 'phone' );
-  let email = getElementVal( 'emailId' );
-  let what = getElementVal( 'rezerve' );
-  let state = getElementVal( 'single' );
-  let cal = getElementVal( 'calendar' );
-  let time = getElementVal( 'time' );
-  let message = getElementVal( 'message' );
+  let name = getElementVal('name');
+  let phone = getElementVal('phone');
+  let email = getElementVal('emailId');
+  let rezerve = getElementVal('rezerve');
+  let reason = getElementVal('reason');
+  let calendar = getElementVal('calendar');
+  let time = getElementVal('time');
+  let message = getElementVal('area');
 
-  console.log( name, phone, email, what, state, cal, time, message )
-} );
+  saveMessages(name, phone, email, rezerve, reason, calendar, time, message)
+  console.log(
+    `Here's your info: 
+    ${ name },
+   ${ phone },
+    ${ email }, 
+    ${ rezerve },
+     ${ reason }, 
+     ${ calendar }, 
+     ${ time }, 
+     ${ message }`)
+
+
+  // enable alert
+  document.querySelector(".alert").style.display = "block"
+  // make the alert disappear again 
+  setTimeout(() => {
+    document.querySelector(".alert").style.display = "none";
+  }, 4000);
+
+  // reset the form
+  document.getElementById("send").reset()
+});
 
 
 
+//this function saves all or any input from the user
+const saveMessages = (name, phone, email, rezerve, reason, calendar, time, message) => {
+  let save = contactFormDB.push();
 
-const getElementVal = ( id ) => {
-  return document.getElementById( id ).value;
+  save.set({
+    name: name,
+    phone: phone,
+    email: email,
+    rezerve: rezerve,
+    reason: reason,
+    calendar: calendar,
+    time: time,
+    message: message,
+  })
+
+
 }

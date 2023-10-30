@@ -435,7 +435,14 @@ footer {
   gap: 2.1rem;
   color: aliceblue;
 }
+.alert {
+  display: none;
+  transition: all ease-in 0.4s;
+}
 
+.alert h3 {
+  transition: all ease-in 0.4s;
+}
 .footer-links a {
   color: aliceblue;
   font-size: 14px;
