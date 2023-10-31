@@ -43,14 +43,13 @@ document.getElementById("send").addEventListener('submit', function submitForm (
   saveMessages(name, phone, email, rezerve, reason, calendar, time, message)
   console.log(
     `Here's your info: 
-    ${ name },
-   ${ phone },
-    ${ email }, 
-    ${ rezerve },
-     ${ reason }, 
-     ${ calendar }, 
-     ${ time }, 
-     ${ message }`)
+      name: ${ name },
+      contact: ${ phone },
+      email: ${ email }, 
+      what you are reserving: ${ rezerve },
+      reserving for: ${ reason }, 
+      date & time: ${ calendar } @ ${ time }, 
+      your request: ${ message }`)
 
 
   // enable alert
