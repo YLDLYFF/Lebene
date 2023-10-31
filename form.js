@@ -53,7 +53,7 @@ document.getElementById("send").addEventListener('submit', function submitForm (
 
 
   // enable alert
-  document.querySelector(".alert").style.display = "block"
+  document.querySelector(".alert").style.display = "block";
   // make the alert disappear again 
   setTimeout(() => {
     document.querySelector(".alert").style.display = "none";
